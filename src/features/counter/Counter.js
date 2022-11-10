@@ -8,7 +8,15 @@ const Counter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>Counter</div>
+        <section>
+            <h3>Welcome to the Counter</h3>
+            <p>{count}</p>
+            <div>
+                <button onClick={() => dispatch(increment())}>+</button>
+                <button onClick={() => dispatch(decrement())}>-</button>
+            </div>
+        </section>
+
     )
 }
 
